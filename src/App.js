@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 
-// import components
-
-import Hero from './components/Hero'
-import Features from './components/Features'
-import NewItems from './components/NewItems'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-  return <div className='w-full max-w-[1440px] mx-auto bg-white'><Hero/>
-  <Features/>
-  <NewItems/></div>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" Component={<LandingPage/>} /> 
+      </Routes>
+    </Router>
+  );
 };
 
 export default App;
