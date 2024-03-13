@@ -9,10 +9,10 @@ const Products = () => {
   return <section className='section'>
     <div className='container mx-auto'>
 <div>
-  <h2>
+  <h2 className='title'>
     {title}
   </h2>
-  <p>
+  <p className='subtitle'>
     {subtitle}
   </p>
 </div>
