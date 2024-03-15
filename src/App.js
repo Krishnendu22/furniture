@@ -1,25 +1,21 @@
 import React from 'react';
 import test from './components/test'
+// import Authen from './Authen'
+import Products from './components/Products'
 // import components
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Hero from './components/Hero'
-import Features from './components/Features'
-import NewItems from './components/NewItems'
-import FeaturesSecond from './components/FeaturesSecond'
-import Products from './components/Products'
-import {Test} from './components/test'
+
+import ShopNow from './components/ShopNow'
+import Home from './home'
 
 
 const App = () => {
-  return <div className='w-full max-w-[1440px] mx-auto bg-white'><Hero/>
-  <Features/>
-  <NewItems/>
-  <FeaturesSecond/>
-  <Products/>
-  <Routes>
+  return <div className='w-full mx-auto bg-white'>
   
-    <Route path='test' element={<Test/>}/>
-  </Routes>
+  <Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/SignUp/ShopNow' element={<ShopNow/>}/>
+    </Routes>
   </div>;
   
 };

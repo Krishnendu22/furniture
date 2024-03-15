@@ -320,6 +320,27 @@ export const newsletter = {
   placeholder: 'Your email address',
   buttonText: 'Shop Now',
 };
+export const filters= {
+     Title1: 'Sort-By',
+     answer1:{
+      answer11:'Low To High',
+      answer12:'High To Low',
+      answer13:'Relevant',
+     },
+     Title2: 'Category',
+     answer2:{
+      answer21:'Tables',
+      answer22:'Chairs',
+      answer23:'Beds',
+     },
+     Title3: 'Price-Range',
+     answer3:{
+      answer31:'<$100',
+      answer32:'$100-$500',
+      answer33:'>$500',
+     },
+     isSubmitted:false
+  };
 
 export const footer = {
   social: [
